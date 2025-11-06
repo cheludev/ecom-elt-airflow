@@ -1,0 +1,32 @@
+# ====================================================================================================
+# 1. ARCHIVOS DE CREDENCIALES Y CONFIGURACIÓN LOCAL
+# ====================================================================================================
+.env                      # Variables de entorno (contienen secretos)
+profiles.yml              # Archivo de perfiles de DBT (contiene contraseñas)
+airflow_settings.yaml     # Configuración local de Airflow
+webserver_config.py       # Configuración local del webserver
+airflow.cfg               # Archivo de configuración principal de Airflow
+
+# ====================================================================================================
+# 2. BASES DE DATOS Y CACHÉ LOCAL
+# ====================================================================================================
+airflow.db                # Base de datos local de SQLite de Airflow
+.DS_Store                 # Archivos de metadatos de Mac
+__pycache__/              # Cache de Python
+*.pyc
+*.pid                     # Archivos de ID de proceso (ej: airflow-webserver.pid)
+
+# ====================================================================================================
+# 3. ENTORNOS VIRTUALES Y BINARIOS
+# ====================================================================================================
+.venv/                    # Entorno virtual de Python
+astro/                    # Directorio de configuración local de Astro/Airflow
+dbt_venv/
+
+# ====================================================================================================
+# 4. ARCHIVOS GENERADOS POR DBT 
+# ====================================================================================================
+target/                   # Contiene el SQL compilado (no necesario)
+dbt_packages/             # Dependencias de librerías de dbt (se regeneran con 'dbt deps')
+
+dags/*/target/

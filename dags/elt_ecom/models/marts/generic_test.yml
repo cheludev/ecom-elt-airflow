@@ -1,0 +1,6 @@
+models:
+  - name: fct_sales
+    columns:
+      - name: order_date
+        tests:
+          - not_null

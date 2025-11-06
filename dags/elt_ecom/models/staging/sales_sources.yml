@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: kaggle_raw 
+    database: DBT_DB_ELT
+    schema: KAGGLE_RAW
+
+    tables:
+      - name: amazon_sales_raw
+        columns:
+          - name: index_col
+            data_tests:
+              - unique
+              - not_null
+      - name: international_sales_raw
+        columns:
+          - name: index_col
+            data_tests:
+              - unique
+              - not_null
+                
