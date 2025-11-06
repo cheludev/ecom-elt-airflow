@@ -1,4 +1,4 @@
-🛠️ Proyecto: Pipeline ELT E-Commerce (Local a Snowflake)
+Proyecto: Pipeline ELT E-Commerce (Local a Snowflake)
 Este proyecto representa mi segunda incursión en la construcción de un flujo ELT (Extract, Load, Transform) de extremo a extremo, enfocándome esta vez en la Ingesta de Datos (E/L) desde una fuente local (archivos .csv de un e-commerce) hasta un modelo analítico en la nube.
 
 La meta era clara: Transformar datos de ventas complejos en una tabla final (fct_sales_performance) lista para responder preguntas de negocio sobre rendimiento y fulfillment.
